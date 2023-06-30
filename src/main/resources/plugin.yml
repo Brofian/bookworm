@@ -1,5 +1,5 @@
 name: BookwormPlugin
-version: 0.0.1
+version: 1.0.0
 main: de.fabianholzwarth.BookwormPlugin
 description: Show players a preview of the targeted book inside a chiseled bookshelf
 author: Fabian Holzwarth
