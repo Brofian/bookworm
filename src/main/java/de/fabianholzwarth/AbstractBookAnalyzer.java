@@ -43,6 +43,17 @@ abstract public class AbstractBookAnalyzer {
         switch (stack.getType()) {
             case WRITTEN_BOOK -> {
                 BookMeta bookMeta = (BookMeta) meta;
+                if (meta.hasDisplayName()) {
+                    Component displayName = meta.displayName();
+                    if (displayName != null) {
+                        return new Component[]{
+                                displayName,
+                                ChatHelper.text(" ("),
+                                ChatHelper.translated("book.byAuthor", new Component[]{ChatHelper.text(bookMeta.getAuthor())}),
+                                ChatHelper.text(")")
+                        };
+                    }
+                }
                 return new Component[]{
                         ChatHelper.text(bookMeta.getTitle() + " ("),
                         ChatHelper.translated("book.byAuthor", new Component[]{ChatHelper.text(bookMeta.getAuthor())}),
