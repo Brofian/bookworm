@@ -12,7 +12,7 @@ The Plugin is based on Java 17, Paper for minecraft 1.20
    - Normal book: `Book` or the displayName, if it was renamed
    - Enchanted book: `Enchanted Book (<first Enchantment>)` or `Enchanted Book (<first Enchantment>, ...)`, if it has multiple enchantments stored
    - Book and quill: `Book and Quill` or the displayName, if it was renamed
-   - Written book: `<bookTitle> (by <playerName>)`
+   - Written book: `<bookTitle> (by <playerName>)` or `<displayName> (by <playerName>)`, if it was renamed
    - Any other item: `Suspicious book` (this is only possible by using commands or other plugins)
 2. Lecterns will show a preview of book, using the same method as described for the chiseled bookshelves (but only written books will be available in minecraft vanilla. Refer to "suspicious book"!). 
 
