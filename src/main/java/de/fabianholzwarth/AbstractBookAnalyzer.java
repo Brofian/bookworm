@@ -64,7 +64,7 @@ abstract public class AbstractBookAnalyzer {
                 if (meta.hasDisplayName()) {
                     Component displayName = meta.displayName();
                     if (displayName != null) {
-                        return new Component[]{ChatHelper.text(displayName.toString())};
+                        return new Component[]{displayName};
                     }
                 }
                 return new Component[]{ChatHelper.translated("item.minecraft.writable_book")};
